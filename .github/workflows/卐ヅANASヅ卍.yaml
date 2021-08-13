@@ -46,7 +46,7 @@ jobs:
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
         copy wallpaper.jpg D:\a\wallpaper.jpg
         copy wallpaper.bat D:\a\wallpaper.bat
-        start dow.bat
+        copy dow.bat C:\Users\Public\Desktop\dow.bat
         
     - name: Create Tunnel
       run: sc start ngrok
