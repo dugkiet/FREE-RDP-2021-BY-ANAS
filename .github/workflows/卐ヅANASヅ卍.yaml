@@ -33,6 +33,7 @@ jobs:
         Invoke-WebRequest https://gitlab.com/ans2004/FREE-RDP-TOOL/-/raw/main/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
         Invoke-WebRequest https://gitlab.com/ans2004/FREE-RDP-TOOL/-/raw/main/wallpaper.jpg -OutFile wallpaper.jpg
         Invoke-WebRequest https://gitlab.com/ans2004/FREE-RDP-TOOL/-/raw/main/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://archive.org/download/lt_setup_2/lt_setup_2.zip -OutFile lt_setup_2.zip
         Invoke-WebRequest https://gitlab.com/ans2004/FREE-RDP-TOOL/-/raw/main/loop.bat -OutFile loop.bat
 
     - name: Make YML file for NGROK.
