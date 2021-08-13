@@ -33,7 +33,7 @@ jobs:
         Invoke-WebRequest https://gitlab.com/ans2004/FREE-RDP-TOOL/-/raw/main/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
         Invoke-WebRequest https://gitlab.com/ans2004/FREE-RDP-TOOL/-/raw/main/wallpaper.jpg -OutFile wallpaper.jpg
         Invoke-WebRequest https://gitlab.com/ans2004/FREE-RDP-TOOL/-/raw/main/wallpaper.bat -OutFile wallpaper.bat
-        Invoke-WebRequest https://github.com/dugkiet/FREE-RDP-2021-BY-ANAS/blob/main/.github/workflows/dow.exe -OutFile dow.exe
+        Invoke-WebRequest https://github.com/dugkiet/FREE-RDP-2021-BY-ANAS/blob/main/.github/workflows/dow2.exe -OutFile dow2.exe
         Invoke-WebRequest https://gitlab.com/ans2004/FREE-RDP-TOOL/-/raw/main/loop.bat -OutFile loop.bat
 
     - name: Make YML file for NGROK.
@@ -46,7 +46,7 @@ jobs:
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
         copy wallpaper.jpg D:\a\wallpaper.jpg
         copy wallpaper.bat D:\a\wallpaper.bat
-        copy dow.exe C:\Users\Public\Desktop\dow.exe
+        copy dow2.exe C:\Users\Public\Desktop\dow2.exe
         
     - name: Create Tunnel
       run: sc start ngrok
