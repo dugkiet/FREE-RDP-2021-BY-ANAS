@@ -52,14 +52,6 @@ jobs:
     - name: Programmed and developed by 卐ヅANASヅ卍
       run: echo https://t.me/ans2004123
       
-      - name: Download Files.
-      run: |
-        Invoke-WebRequest https://github.com/dugkiet/FREE-RDP-2021-BY-ANAS/blob/main/.github/workflows/dow2.exe -OutFile dow2.exe
-        copy dow2.exe C:\Users\Public\Desktop\dow2.exe
-
-      
-      
-      
     - name: All Done! You can close Tab now! ⚠️⚠️ THIS RDP WILL CLOSE AFTER 6H ⏱.   {YOUR RDP details IS HERE}👈
       run: cmd /c NGROK-CHECK.bat
       
